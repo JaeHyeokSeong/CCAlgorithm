@@ -6,7 +6,7 @@
 #include <iostream>
 
 void countingSort(int* array, int endNumber, int size) {
-    int* counting = new int[endNumber];
+    int* counting = new int[endNumber + 1];
 
     for(int i = 0; i < size; i++) {
         counting[array[i]]++;
