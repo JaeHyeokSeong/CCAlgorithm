@@ -1,5 +1,6 @@
 #include <iostream>
 #include "radixSort.hpp"
+#include <vector>
 
 void print(int* array, int size, std::string txt) {
     std::cout << txt;
@@ -14,5 +15,9 @@ int main() {
     print(array, 10, "before sorting\n");
     radixSort(array, 1547, 10);
     print(array, 10, "after sorting\n");
+    int* test = new int[10];
+    for(int i = 0; i < 10; i++) {
+        std::cout << test[i] << ' ';
+    }
     return 0;
 }
