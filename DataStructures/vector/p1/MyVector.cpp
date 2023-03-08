@@ -15,11 +15,7 @@ MyVector::MyVector(const int &capacity) {
     if(capacity <= 0)
         throw std::out_of_range("[warning] invalid capacity");
     ptrArray = new int[capacity]{0};
-    this->capacity = capacity;
-    this->size = 0;
-    for(int i = 0; i < capacity; i++) {
-        size++;
-    }
+    this->size = this->capacity = capacity;
 }
 
 MyVector::~MyVector() {
